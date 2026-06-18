@@ -4,17 +4,17 @@ let goalsChart = null;
 let allData = null;
 
 const FLAGS = {
-    'Argentina': '🇦🇷', 'Chile': '🇨🇱', 'México': '🇲🇽', 'Nueva Zelanda': '🇳🇿',
-    'Brasil': '🇧🇷', 'España': '🇪🇸', 'Japón': '🇯🇵', 'Ghana': '🇬🇭',
+    'Argentina': '🇦🇷', 'Chile': '🇨🇱', 'Mexico': '🇲🇽', 'Nueva Zelanda': '🇳🇿',
+    'Brasil': '🇧🇷', 'Espana': '🇪🇸', 'Japon': '🇯🇵', 'Ghana': '🇬🇭',
     'Francia': '🇫🇷', 'Inglaterra': '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Estados Unidos': '🇺🇸', 'Australia': '🇦🇺',
-    'Alemania': '🇩🇪', 'Países Bajos': '🇳🇱', 'Senegal': '🇸🇳', 'Corea del Sur': '🇰🇷'
+    'Alemania': '🇩🇪', 'Paises Bajos': '🇳🇱', 'Senegal': '🇸🇳', 'Corea del Sur': '🇰🇷'
 };
 
 const ABBREVIATIONS = {
-    'Argentina': 'ARG', 'Chile': 'CHI', 'México': 'MEX', 'Nueva Zelanda': 'NZ',
-    'Brasil': 'BRA', 'España': 'ESP', 'Japón': 'JPN', 'Ghana': 'GHA',
+    'Argentina': 'ARG', 'Chile': 'CHI', 'Mexico': 'MEX', 'Nueva Zelanda': 'NZ',
+    'Brasil': 'BRA', 'Espana': 'ESP', 'Japon': 'JPN', 'Ghana': 'GHA',
     'Francia': 'FRA', 'Inglaterra': 'ENG', 'Estados Unidos': 'USA', 'Australia': 'AUS',
-    'Alemania': 'GER', 'Países Bajos': 'NED', 'Senegal': 'SEN', 'Corea del Sur': 'KOR'
+    'Alemania': 'GER', 'Paises Bajos': 'NED', 'Senegal': 'SEN', 'Corea del Sur': 'KOR'
 };
 
 function shortName(nombre) {
@@ -231,10 +231,10 @@ function renderStats(stats) {
 
     const FULL_NAME = Object.fromEntries(Object.entries(ABBREVIATIONS).map(([k, v]) => [v, k]));
     const groupColorsFull = {
-        'Argentina':'#E53935','Chile':'#E53935','México':'#E53935','Nueva Zelanda':'#E53935',
-        'Brasil':'#1E88E5','España':'#1E88E5','Japón':'#1E88E5','Ghana':'#1E88E5',
+        'Argentina':'#E53935','Chile':'#E53935','Mexico':'#E53935','Nueva Zelanda':'#E53935',
+        'Brasil':'#1E88E5','Espana':'#1E88E5','Japon':'#1E88E5','Ghana':'#1E88E5',
         'Francia':'#43A047','Inglaterra':'#43A047','Estados Unidos':'#43A047','Australia':'#43A047',
-        'Alemania':'#FB8C00','Países Bajos':'#FB8C00','Senegal':'#FB8C00','Corea del Sur':'#FB8C00'
+        'Alemania':'#FB8C00','Paises Bajos':'#FB8C00','Senegal':'#FB8C00','Corea del Sur':'#FB8C00'
     };
 
     const bgColors = labels.map(l => {

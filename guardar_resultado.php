@@ -296,10 +296,10 @@ function inicializar($pdo) {
     $pdo->exec("TRUNCATE TABLE equipos");
 
     $equipos = [
-        ['Argentina', 'A'], ['Chile', 'A'], ['México', 'A'], ['Nueva Zelanda', 'A'],
-        ['Brasil', 'B'], ['España', 'B'], ['Japón', 'B'], ['Ghana', 'B'],
+        ['Argentina', 'A'], ['Chile', 'A'], ['Mexico', 'A'], ['Nueva Zelanda', 'A'],
+        ['Brasil', 'B'], ['Espana', 'B'], ['Japon', 'B'], ['Ghana', 'B'],
         ['Francia', 'C'], ['Inglaterra', 'C'], ['Estados Unidos', 'C'], ['Australia', 'C'],
-        ['Alemania', 'D'], ['Países Bajos', 'D'], ['Senegal', 'D'], ['Corea del Sur', 'D'],
+        ['Alemania', 'D'], ['Paises Bajos', 'D'], ['Senegal', 'D'], ['Corea del Sur', 'D'],
     ];
 
     $ins = $pdo->prepare("INSERT INTO equipos (nombre, grupo) VALUES (?, ?)");
